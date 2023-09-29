@@ -3,8 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors </title>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <style>
+            .game-container {
+                width: 500px;
+                margin: auto;
+                padding: 20px;
+                /* why is margin down always different? */
+                background-color: aliceblue;
+                text-align: center;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .scoreboard {
+                justify-content: space-evenly;
+                display: flex;
+                padding-bottom: 30px;
+                font-size: 20px;
+                color: red;
+            }
+
+            .result {
+                font-size: 20px;
+            }
+
+        </style>
     </head>
     <body>
+        <div class="game-container">
+        <h2>Choose your weapon:</h2>
+            <div class="buttons">
+            <button class="button" id="rock">Rock</button>
+            <button class="button" id="paper">Paper</button>
+            <button class="button" id="scissors">Scissors</button>
+            </div>
+            <div class="scoreboard">
+                <p id="player-score">Player: 0</p>
+                <p id="computer-score">Computer: 0</p>
+            </div>
+            <div class="result">
+            </div>
+        </div>
     </body>
 </html>
